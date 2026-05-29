@@ -2,4 +2,135 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundos Infinitos: Livros & Jogos</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent-book: #e67e22;
+            --accent-game: #9b59b6;
+            --light: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: var(--light);
+            color: #333;
+        }
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 2rem text-align: center;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card.books { border-top: 5px solid var(--accent-book); }
+        .card.games { border-top: 5px solid var(--accent-game); }
+
+        h2 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .tag-book { background: var(--accent-book); }
+        .tag-game { background: var(--accent-game); }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mundos Infinitos</h1>
+    <p>Onde a imaginação encontra a interatividade</p>
+</header>
+
+<div class="container">
+    <section class="intro">
+        <h2>A Conexão entre Narrativas</h2>
+        <p>Seja através das páginas de um romance épico ou do controle de um console de última geração, o objetivo é o mesmo: <strong>viver histórias inesquecíveis.</strong></p>
+    </section>
+
+    <div class="grid">
+        <article class="card books">
+            <span class="tag tag-book">Literatura</span>
+            <h2>O Poder das Palavras</h2>
+            <p>Livros permitem que o leitor construa cenários e rostos em sua própria mente. É uma experiência introspectiva e profunda que molda nossa empatia.</p>
+            <ul>
+                <li>Ficção Científica e Fantasia</li>
+                <li>Biografias Inspiradoras</li>
+                <li>Clássicos Atemporais</li>
+            </ul>
+        </article>
+
+        <article class="card games">
+            <span class="tag tag-game">Gaming</span>
+            <h2>Imersão e Agência</h2>
+            <p>Nos jogos, você não é apenas um espectador, mas o protagonista. Suas escolhas moldam o destino do mundo virtual e testam suas habilidades.</p>
+            <ul>
+                <li>RPGs de Mundo Aberto</li>
+                <li>Indies Narrativos</li>
+                <li>Competições Online</li>
+            </ul>
+        </article>
+    </div>
+
+    <section style="margin-top: 3rem; text-align: center;">
+        <blockquote style="font-style: italic; color: #555;">
+            "Um leitor vive mil vidas antes de morrer... o jogador vive todas elas e ainda decide o final."
+        </blockquote>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 - Criado para amantes de boas histórias</p>
+</footer>
+
+</body>
+</html>
